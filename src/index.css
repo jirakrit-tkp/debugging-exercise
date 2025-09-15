@@ -1,3 +1,118 @@
+/* Custom CSS Styles */
+.user-form {
+  width: 20rem;
+  margin: 6rem auto 0;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.label-text {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1.25rem 1rem;
+  font-size: 1.125rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+  background-color: #fafafa;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.submit-button {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.25rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+.submit-button-invalid {
+  width: 100%;
+  background: gray;
+  color: white;
+  padding: 1.25rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.message-invalid {
+  color: #dc2626;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-placeholder {
+  min-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
